@@ -25,7 +25,7 @@ export default function ContactPage() {
         e.preventDefault();
         const subject = `Contact Form Submission from ${firstName} ${lastName}`;
         const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`;
-        const mailtoLink = `mailto:contact@${siteConfig.url.replace(/https?:\/\//, '')}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:parthakashyal@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
     };
 
